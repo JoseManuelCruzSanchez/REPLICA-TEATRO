@@ -1,0 +1,2705 @@
+/*!
+Theme Name: starter
+Theme URI: http://underscores.me/
+Author: Somos Bureau
+Author URI: http://Somos%20Bureau
+Description: Somos Bureau
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: starter-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+
+EL COMPILADOR ESTA FUNCIONANDO
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+starter is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, ../sass/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, ../sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, ../sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, ../sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, ../sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, ../sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, ../sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, ../sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, ../sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, ../sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, ../sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, ../sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, ../sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, ../sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, ../sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, ../sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, ../sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, ../sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, ../sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, ../sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, ../sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* line 1, ../sass/typography/_typography.scss */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #111;
+  font-family: "Microsoft Sans Serif";
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 10, ../sass/typography/_headings.scss */
+p, a, h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 14, ../sass/typography/_headings.scss */
+a, p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* line 19, ../sass/typography/_headings.scss */
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+/* line 24, ../sass/typography/_headings.scss */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* line 30, ../sass/typography/_headings.scss */
+h3 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* line 36, ../sass/typography/_headings.scss */
+.serif-header {
+  font-family: serif;
+}
+
+/* line 5, ../sass/typography/_copy.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 9, ../sass/typography/_copy.scss */
+blockquote {
+  margin: 0 1.5em;
+}
+
+/* line 13, ../sass/typography/_copy.scss */
+address {
+  margin: 0 0 1.5em;
+}
+
+/* line 17, ../sass/typography/_copy.scss */
+pre {
+  background: #eee;
+  font-family: "Microsoft Sans Serif";
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+/* line 28, ../sass/typography/_copy.scss */
+code, kbd, tt, var {
+  font-family: "Microsoft Sans Serif";
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+/* line 33, ../sass/typography/_copy.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* line 38, ../sass/typography/_copy.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 43, ../sass/typography/_copy.scss */
+big {
+  font-size: 125%;
+}
+
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  src: url("MicrosoftSansSerif.woff2") format("woff2"), url("MicrosoftSansSerif.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* line 1, ../sass/elements/_elements.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/elements/_elements.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+/* line 11, ../sass/elements/_elements.scss */
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+/* line 15, ../sass/elements/_elements.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* line 1, ../sass/elements/_lists.scss */
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+
+/* line 5, ../sass/elements/_lists.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 9, ../sass/elements/_lists.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 13, ../sass/elements/_lists.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+/* line 19, ../sass/elements/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 23, ../sass/elements/_lists.scss */
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* line 24, ../sass/elements/_elements.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 29, ../sass/elements/_elements.scss */
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+/* line 1, ../sass/elements/_tables.scss */
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* line 1, ../sass/forms/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #000 #000 #000;
+  /*border-radius: 3px;*/
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+}
+/* line 14, ../sass/forms/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #000 #000 #000;
+}
+/* line 18, ../sass/forms/_buttons.scss */
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #000 #000 #000;
+}
+
+/* line 1, ../sass/forms/_fields.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #111;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 3px;
+}
+/* line 22, ../sass/forms/_fields.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+/* line 27, ../sass/forms/_fields.scss */
+select {
+  border: 1px solid #000;
+}
+
+/* line 31, ../sass/forms/_fields.scss */
+textarea {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+/* line 1, ../sass/navigation/_links.scss */
+a {
+  color: #111;
+}
+/* line 4, ../sass/navigation/_links.scss */
+a:visited {
+  color: #111;
+}
+/* line 7, ../sass/navigation/_links.scss */
+a:hover, a:focus, a:active {
+  color: #111;
+}
+/* line 12, ../sass/navigation/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 15, ../sass/navigation/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+/* line 1, ../sass/navigation/_menus.scss */
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 7, ../sass/navigation/_menus.scss */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 13, ../sass/navigation/_menus.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+}
+/* line 21, ../sass/navigation/_menus.scss */
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+/* line 27, ../sass/navigation/_menus.scss */
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+/* line 33, ../sass/navigation/_menus.scss */
+.main-navigation ul ul a {
+  width: 200px;
+}
+/* line 46, ../sass/navigation/_menus.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+/* line 52, ../sass/navigation/_menus.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 61, ../sass/navigation/_menus.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+/* line 74, ../sass/navigation/_menus.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  /* line 80, ../sass/navigation/_menus.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 83, ../sass/navigation/_menus.scss */
+  .main-navigation ul {
+    display: block;
+  }
+}
+/* line 92, ../sass/navigation/_menus.scss */
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+/* line 97, ../sass/navigation/_menus.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+/* line 102, ../sass/navigation/_menus.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, ../sass/modules/_accessibility.scss */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+/* line 14, ../sass/modules/_accessibility.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #111;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+/* line 36, ../sass/modules/_accessibility.scss */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/* line 1, ../sass/modules/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+/* line 7, ../sass/modules/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+/* line 13, ../sass/modules/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/* line 1, ../sass/modules/_clearings.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 16, ../sass/modules/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/* line 1, ../sass/site/secondary/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+/* line 5, ../sass/site/secondary/_widgets.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/* line 1, ../sass/site/primary/_posts-and-pages.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, ../sass/site/primary/_posts-and-pages.scss */
+.post,
+.page {
+  margin: 0em;
+}
+
+/* line 10, ../sass/site/primary/_posts-and-pages.scss */
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 14, ../sass/site/primary/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 0em 0 0;
+}
+
+/* line 20, ../sass/site/primary/_posts-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 0em;
+}
+
+/* line 25, ../sass/site/primary/_posts-and-pages.scss */
+.entry-content-black {
+  background: black;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/* line 1, ../sass/site/primary/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 4, ../sass/site/primary/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, ../sass/modules/_infinite-scroll.scss */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, ../sass/modules/_infinite-scroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* line 1, ../sass/media/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 11, ../sass/media/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+/* line 18, ../sass/media/_media.scss */
+.custom-logo-link {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+/* line 1, ../sass/media/_captions.scss */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+/* line 5, ../sass/media/_captions.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, ../sass/media/_captions.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+/* line 14, ../sass/media/_captions.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+/* line 1, ../sass/media/_galleries.scss */
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+/* line 5, ../sass/media/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+/* line 13, ../sass/media/_galleries.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 19, ../sass/media/_galleries.scss */
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# SOMOS BUREAU
+--------------------------------------------------------------*/
+/* line 8, ../sass/somos-bureau/_border.scss */
+.border-frame {
+  border: 2px solid #000;
+}
+
+/* line 11, ../sass/somos-bureau/_border.scss */
+.border-top {
+  border-top: 2px solid #000;
+}
+
+/* line 14, ../sass/somos-bureau/_border.scss */
+.border-bottom {
+  border-bottom: 2px solid #000;
+}
+
+/* line 17, ../sass/somos-bureau/_border.scss */
+.border-right {
+  border-right: 2px solid #000;
+}
+
+/* line 20, ../sass/somos-bureau/_border.scss */
+.border-left {
+  border-left: 2px solid #000;
+}
+
+/* line 1, ../sass/somos-bureau/_html_ajustes.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, ../sass/somos-bureau/_html_ajustes.scss */
+:focus {
+  outline: none !important;
+}
+
+/* line 12, ../sass/somos-bureau/_html_ajustes.scss */
+a {
+  text-decoration: none !important;
+}
+
+/*
+a:visited {
+    color: $color__negro !important;
+}
+*/
+/* line 24, ../sass/somos-bureau/_html_ajustes.scss */
+h1.title,
+.link-block-side h2 {
+  padding: 0 20px !important;
+  line-height: 0 !important;
+}
+
+/* line 29, ../sass/somos-bureau/_html_ajustes.scss */
+button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background: inherit;
+  border: none;
+  font: inherit;
+  outline: none;
+  width: 100%;
+  display: block;
+  text-align: left;
+  color: inherit;
+}
+
+/* line 43, ../sass/somos-bureau/_html_ajustes.scss */
+ul {
+  list-style: none !important;
+  margin: 0 !important;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  padding-inline-start: 0px !important;
+}
+
+/* line 54, ../sass/somos-bureau/_html_ajustes.scss */
+ul.alumni li {
+  margin-bottom: 5px !important;
+}
+
+/* line 59, ../sass/somos-bureau/_html_ajustes.scss */
+p.espacios {
+  padding-left: 20px !important;
+}
+
+/* line 63, ../sass/somos-bureau/_html_ajustes.scss */
+.background-image {
+  position: fixed !important;
+  z-index: -999 !important;
+}
+
+/* line 68, ../sass/somos-bureau/_html_ajustes.scss */
+.padding-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* line 74, ../sass/somos-bureau/_html_ajustes.scss */
+.margin-none {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* line 79, ../sass/somos-bureau/_html_ajustes.scss */
+.margin-top-none {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* line 2, ../sass/somos-bureau/_header_ajustes.scss */
+.site-container {
+  width: 100%;
+  margin: 0vh 0vw;
+}
+
+/* line 7, ../sass/somos-bureau/_header_ajustes.scss */
+.header-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 19, ../sass/somos-bureau/_header_ajustes.scss */
+.link-block-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 38, ../sass/somos-bureau/_header_ajustes.scss */
+.link-block-3:hover {
+  background-color: #111;
+  direction: ltr;
+  color: #fff;
+}
+
+/* line 44, ../sass/somos-bureau/_header_ajustes.scss */
+.link-block-3.w--current {
+  background-color: transparent;
+  color: #111;
+  text-decoration: none;
+}
+
+/* line 50, ../sass/somos-bureau/_header_ajustes.scss */
+.link-block-3.w--current:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+/* line 55, ../sass/somos-bureau/_header_ajustes.scss */
+.link-block-3.right {
+  border-right-style: none;
+}
+
+/* line 59, ../sass/somos-bureau/_header_ajustes.scss */
+.link-block-3.logo-link:hover {
+  background-color: transparent;
+  direction: ltr;
+  color: #2000eb;
+}
+
+/* line 65, ../sass/somos-bureau/_header_ajustes.scss */
+.menu-container {
+  display: flex;
+  height: 100%;
+}
+
+/*
+.center-menu{
+  display: -webkit-inline-block;
+  display: -webkit-inline-block;
+  display: -ms-inline-block;
+  display: inline-block;
+  height: 100%;
+  width:  50%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: $color__blanco;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.center-menu a{
+  height: calc(15vh/2);
+}
+*/
+/* line 90, ../sass/somos-bureau/_header_ajustes.scss */
+.right-menu {
+  display: -webkit-inline-block;
+  display: -webkit-inline-block;
+  display: -ms-inline-block;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+/* line 105, ../sass/somos-bureau/_header_ajustes.scss */
+.right-menu a {
+  height: calc(15vh/4);
+}
+
+/* line 109, ../sass/somos-bureau/_header_ajustes.scss */
+.left-menu {
+  display: -webkit-inline-block;
+  display: -webkit-inline-block;
+  display: -ms-inline-block;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 122, ../sass/somos-bureau/_header_ajustes.scss */
+.left-menu a {
+  height: calc(15vh/1);
+}
+
+/* line 127, ../sass/somos-bureau/_header_ajustes.scss */
+.col-xs-6 {
+  padding: 0 !important;
+}
+
+/* line 131, ../sass/somos-bureau/_header_ajustes.scss */
+#logo {
+  height: 60% !important;
+  max-width: 100%;
+  padding-left: 1vw;
+}
+
+/* line 136, ../sass/somos-bureau/_header_ajustes.scss */
+.marquee3k__copy {
+  padding-right: 10px;
+}
+
+/* line 142, ../sass/somos-bureau/_header_ajustes.scss */
+.news {
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+
+/* line 147, ../sass/somos-bureau/_header_ajustes.scss */
+.color_bar {
+  overflow: hidden;
+  color: white;
+  background: linear-gradient(315deg, #ffffff, #ffadad, #4b9454, #5e4eff);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* line 176, ../sass/somos-bureau/_header_ajustes.scss */
+.right-menu p {
+  position: relative;
+}
+
+/* line 181, ../sass/somos-bureau/_header_ajustes.scss */
+.right-menu p:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 193, ../sass/somos-bureau/_header_ajustes.scss */
+.right-menu p:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* line 1, ../sass/somos-bureau/_footer_ajustes.scss */
+.site-footer {
+  width: 100%;
+  margin: 0vh 0vw;
+  background: #fff;
+  z-index: 999;
+}
+
+/* line 7, ../sass/somos-bureau/_footer_ajustes.scss */
+.link-block-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 26, ../sass/somos-bureau/_footer_ajustes.scss */
+.link-block-footer.w--current {
+  background-color: transparent;
+  color: #111;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/somos-bureau/_footer_ajustes.scss */
+.link-block-footer.w--current:hover {
+  color: #2000eb;
+}
+
+/* line 35, ../sass/somos-bureau/_footer_ajustes.scss */
+.footer-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7vh;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 47, ../sass/somos-bureau/_footer_ajustes.scss */
+.contain {
+  contain: content;
+}
+
+/* line 50, ../sass/somos-bureau/_footer_ajustes.scss */
+#madrid {
+  height: 30%;
+  max-width: 100%;
+}
+
+/* line 1, ../sass/somos-bureau/_body_ajustes.scss */
+.body-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75vh;
+  contain: content;
+}
+
+/* line 9, ../sass/somos-bureau/_body_ajustes.scss */
+.centered-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 29, ../sass/somos-bureau/_body_ajustes.scss */
+.centered-block.w--current {
+  background-color: transparent;
+  color: #111;
+  text-decoration: none;
+}
+
+/* line 35, ../sass/somos-bureau/_body_ajustes.scss */
+.centered-block.right {
+  border-right-style: none;
+}
+
+/* line 39, ../sass/somos-bureau/_body_ajustes.scss */
+.fullpage-gallery {
+  position: relative;
+  padding: 0 !important;
+  width: 100vw;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 47, ../sass/somos-bureau/_body_ajustes.scss */
+.event-gallery {
+  overflow-y: auto !important;
+}
+
+/* line 51, ../sass/somos-bureau/_body_ajustes.scss */
+.fullpage-gallery.gallery-expand {
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* line 55, ../sass/somos-bureau/_body_ajustes.scss */
+.fullpage-gallery img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 61, ../sass/somos-bureau/_body_ajustes.scss */
+.google-maps {
+  max-height: 75vh;
+  object-fit: cover;
+}
+
+/* line 67, ../sass/somos-bureau/_body_ajustes.scss */
+.swiper-container {
+  position: initial !important;
+}
+
+/* line 74, ../sass/somos-bureau/_body_ajustes.scss */
+.swiper-button-next, .swiper-button-prev {
+  background-image: url("http://localhost/02wordpress/wp-content/themes/Replika Teatro/swiper-arrow.png") !important;
+}
+
+/* line 78, ../sass/somos-bureau/_body_ajustes.scss */
+.swiper-button-next {
+  right: 1REM !important;
+  left: AUTO;
+}
+
+/* line 83, ../sass/somos-bureau/_body_ajustes.scss */
+.swiper-button-prev {
+  left: 1REM !important;
+  right: AUTO;
+  transform: rotate(180DEG);
+}
+
+/* line 88, ../sass/somos-bureau/_body_ajustes.scss */
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 90% !important;
+  width: 5REM !important;
+  height: 5REM !important;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 5REM  !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 105, ../sass/somos-bureau/_body_ajustes.scss */
+[data-accordion] [data-content] {
+  background: #fff !important;
+}
+
+/* FORMACION */
+/* line 112, ../sass/somos-bureau/_body_ajustes.scss */
+.button-studies {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 118, ../sass/somos-bureau/_body_ajustes.scss */
+#h1-arrow-01,
+#h1-arrow-02,
+#h1-arrow-03 {
+  display: flex;
+  width: 2.5rem;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* line 127, ../sass/somos-bureau/_body_ajustes.scss */
+.face-left {
+  transform: rotate(180deg);
+}
+
+/* line 131, ../sass/somos-bureau/_body_ajustes.scss */
+.studies {
+  display: flex;
+}
+
+/* HISTORIA */
+/* line 138, ../sass/somos-bureau/_body_ajustes.scss */
+.historia-page {
+  text-align: left !important;
+  overflow-y: auto;
+  padding-top: 2rem !important;
+}
+
+/* line 144, ../sass/somos-bureau/_body_ajustes.scss */
+#sala,
+#escuela {
+  overflow: hidden;
+}
+
+/* line 148, ../sass/somos-bureau/_body_ajustes.scss */
+#salaimg,
+#escuelaimg {
+  height: 100% !important;
+  width: auto !important;
+  max-width: 200% !important;
+}
+
+/* line 1, ../sass/somos-bureau/_sidebar.scss */
+#secondary.sidebar-container {
+  position: absolute;
+  transform: translate3d(calc(-100% + 3vw), 0, 0) rotate(180deg);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 10, ../sass/somos-bureau/_sidebar.scss */
+#secondary.sidebar-container:hover {
+  transform: translate3d(0, 0, 0) rotate(180deg);
+}
+
+/* line 14, ../sass/somos-bureau/_sidebar.scss */
+.sidebar-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75vh;
+  background: white;
+  z-index: 999;
+}
+
+/* line 23, ../sass/somos-bureau/_sidebar.scss */
+.sidebar-container h2 {
+  margin-top: 1rem;
+  margin-left: 0;
+  line-height: 0;
+  padding: 0 20px;
+}
+
+/* line 29, ../sass/somos-bureau/_sidebar.scss */
+.panel-escuela {
+  height: 100%;
+  width: 3vw;
+}
+
+/* line 33, ../sass/somos-bureau/_sidebar.scss */
+.panel-escuela:hover {
+  background-color: #2000eb;
+  direction: ltr;
+  color: #fff;
+}
+
+/* line 38, ../sass/somos-bureau/_sidebar.scss */
+.panel-sala:hover {
+  background-color: #00d084;
+  direction: ltr;
+  color: #fff;
+}
+
+/* line 43, ../sass/somos-bureau/_sidebar.scss */
+.panel-sala {
+  height: 100%;
+  width: 3vw;
+}
+
+/* line 47, ../sass/somos-bureau/_sidebar.scss */
+.panel-sala h2, .panel-escuela h2 {
+  font-size: 1vw;
+  font-weight: 800;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+
+/* line 54, ../sass/somos-bureau/_sidebar.scss */
+.link-block-side {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 75, ../sass/somos-bureau/_sidebar.scss */
+.link-block-side.w--current {
+  background-color: #fff;
+  color: #111;
+  text-decoration: none;
+}
+
+/* BARRA LATERAL VERDE/AZUL */
+/*
+.link-block-side.w--current.blue:hover {
+  background-color: $color__color;
+  color: $color__blanco;
+}
+.link-block-side.w--current.green:hover {
+  background-color: $color__color_2;
+  color: $color__blanco;
+}
+*/
+/* line 91, ../sass/somos-bureau/_sidebar.scss */
+.link-block-side.w--current.green:hover,
+.link-block-side.w--current.blue:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+/* line 1, ../sass/somos-bureau/_menu_lateral.scss */
+.link-lateral span.blink {
+  display: none;
+}
+
+/* line 5, ../sass/somos-bureau/_menu_lateral.scss */
+.link-lateral:hover span.blink {
+  display: block;
+}
+
+/* line 9, ../sass/somos-bureau/_menu_lateral.scss */
+.active {
+  display: block;
+}
+
+/* line 13, ../sass/somos-bureau/_menu_lateral.scss */
+#p-arrow {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+/* line 19, ../sass/somos-bureau/_menu_lateral.scss */
+.blink {
+  animation: blink-animation 0.75s steps(2, start) infinite;
+  -webkit-animation: blink-animation 0.75s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+/* line 34, ../sass/somos-bureau/_menu_lateral.scss */
+.col-xs-2.lateral_menu {
+  padding: 0 !important;
+  margin-left: 3vw;
+}
+
+/* line 38, ../sass/somos-bureau/_menu_lateral.scss */
+.col-xs-12.lateral_menu_wrapper {
+  padding: 0 !important;
+}
+
+/* line 43, ../sass/somos-bureau/_menu_lateral.scss */
+.lateral_menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 2.8vw;
+  width: 20VW;
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 52, ../sass/somos-bureau/_menu_lateral.scss */
+.lateral_menu.collapsed {
+  width: 2VW;
+}
+
+/* line 57, ../sass/somos-bureau/_menu_lateral.scss */
+.lateral_menu_wrapper {
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 63, ../sass/somos-bureau/_menu_lateral.scss */
+.lateral_menu_wrapper.collapsed-wrapper {
+  opacity: 0;
+}
+
+/* line 70, ../sass/somos-bureau/_menu_lateral.scss */
+.link-block-lateral {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 91, ../sass/somos-bureau/_menu_lateral.scss */
+.link-block-lateral.w--current {
+  background-color: transparent;
+  color: #111;
+  text-decoration: none;
+}
+
+/*
+.link-block-lateral.w--current:hover {
+  color: $color__color;
+}
+*/
+/* line 101, ../sass/somos-bureau/_menu_lateral.scss */
+.menu-button {
+  position: absolute;
+  width: 20px;
+  top: 2%;
+  left: 90%;
+  transform: scale(1) rotate(180deg);
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 109, ../sass/somos-bureau/_menu_lateral.scss */
+.menu-button.arrow-collapsed {
+  left: 20%;
+  transform: rotate(360deg);
+}
+
+/* line 1, ../sass/somos-bureau/_lateral_contenido.scss */
+.sidebar-right-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75vh;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: unset;
+  right: 0;
+  width: calc(100% + 2px);
+  -webkit-transform: translate3d(calc(100%), 0, 0);
+  transform: translate3d(calc(100%), 0, 0);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 20, ../sass/somos-bureau/_lateral_contenido.scss */
+.sidebar-right-container.active {
+  -webkit-transform: translate3d(calc(0%), 0, 0);
+  transform: translate3d(calc(0% -2px), 0, 0);
+}
+
+/* line 30, ../sass/somos-bureau/_lateral_contenido.scss */
+.sidebar-right-container h2 {
+  font-size: 1.5vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  line-height: 0;
+  margin-block-end: 0 !important;
+  transform: rotate(180deg);
+}
+
+/* line 42, ../sass/somos-bureau/_lateral_contenido.scss */
+.h0-arrow {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  max-height: 35px;
+}
+
+/* line 48, ../sass/somos-bureau/_lateral_contenido.scss */
+.h0-arrow.profesor {
+  margin-right: 0 !important;
+}
+
+/* line 52, ../sass/somos-bureau/_lateral_contenido.scss */
+.mail-icon {
+  max-height: 2rem;
+}
+
+/* line 56, ../sass/somos-bureau/_lateral_contenido.scss */
+.align-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* line 61, ../sass/somos-bureau/_lateral_contenido.scss */
+.menu-button.close {
+  margin-left: 1rem;
+  display: flex;
+  transform: scale(1) rotate(0deg) !important;
+  left: 0 !important;
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 1, ../sass/somos-bureau/_profesores.scss */
+.event-fila,
+.profesor-fila {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, ../sass/somos-bureau/_profesores.scss */
+.event-info {
+  padding: 0 2vw !important;
+}
+
+/* line 11, ../sass/somos-bureau/_profesores.scss */
+h1.event-title {
+  line-height: 0 !important;
+}
+
+/* line 15, ../sass/somos-bureau/_profesores.scss */
+.poster-container {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 22, ../sass/somos-bureau/_profesores.scss */
+.poster-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 30, ../sass/somos-bureau/_profesores.scss */
+.info-profesor {
+  margin: 2rem 2rem;
+  margin-right: 50%;
+}
+
+/* line 34, ../sass/somos-bureau/_profesores.scss */
+.sidebar-prof-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: unset;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 33.333%);
+  -webkit-transform: translate3d(calc(100%), 0, 0);
+  transform: translate3d(calc(100%), 0, 0);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.19, 0.33, 0.73);
+}
+
+/* line 55, ../sass/somos-bureau/_profesores.scss */
+.sidebar-prof-container.active {
+  -webkit-transform: translate3d(calc(0%), 0, 0);
+  transform: translate3d(calc(0%), 0, 0);
+}
+
+/* line 65, ../sass/somos-bureau/_profesores.scss */
+.sidebar-prof-container h2 {
+  font-size: 1.5vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  line-height: 0;
+  margin-block-end: 0 !important;
+  transform: rotate(180deg);
+}
+
+/* line 1, ../sass/somos-bureau/_loader.scss */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fcfcfc;
+  z-index: 1000000;
+  padding: 1.5rem 1rem;
+}
+
+/* line 12, ../sass/somos-bureau/_loader.scss */
+#loader .loader-logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 75vw;
+  transition: opacity .1s;
+  opacity: 1;
+}
+
+/* line 23, ../sass/somos-bureau/_loader.scss */
+#loader .loader-logo img {
+  overflow: visible;
+  height: auto;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+/* line 2, ../sass/somos-bureau/_accordion.scss */
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --main-border: 2px solid black;
+}
+
+/* line 8, ../sass/somos-bureau/_accordion.scss */
+.white-background {
+  background: var(--white-color);
+}
+
+/* line 12, ../sass/somos-bureau/_accordion.scss */
+#single {
+  width: 100%;
+}
+
+/* line 16, ../sass/somos-bureau/_accordion.scss */
+.background-image-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: -999;
+}
+
+/* line 24, ../sass/somos-bureau/_accordion.scss */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: left;
+  width: 100vw;
+  height: 75vh;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* line 42, ../sass/somos-bureau/_accordion.scss */
+.flex-container-narrow {
+  width: calc(100%);
+}
+
+/* line 45, ../sass/somos-bureau/_accordion.scss */
+.flex-start {
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+
+/* line 50, ../sass/somos-bureau/_accordion.scss */
+.flex-end {
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+
+/* line 55, ../sass/somos-bureau/_accordion.scss */
+.center {
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+/* line 60, ../sass/somos-bureau/_accordion.scss */
+.space-between {
+  -webkit-align-content: space-between;
+  align-content: space-between;
+}
+
+/* line 66, ../sass/somos-bureau/_accordion.scss */
+.space-around {
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+
+/* line 72, ../sass/somos-bureau/_accordion.scss */
+.stretch {
+  -webkit-align-content: stretch;
+  align-content: stretch;
+}
+
+/* line 77, ../sass/somos-bureau/_accordion.scss */
+[data-accordion] {
+  background: var(--white-color);
+}
+
+/* line 81, ../sass/somos-bureau/_accordion.scss */
+[data-accordion] [data-content]
+[data-accordion] [data-content] [data-content]
+[data-accordion] [data-content] [data-content] [data-content] {
+  background: var(--white-color);
+}
+
+/* line 1, ../sass/somos-bureau/_accordion2.scss */
+#accordion,
+#multiple {
+  width: 100%;
+  background: white;
+}
+
+/*MAX HEIGHT*/
+/* line 9, ../sass/somos-bureau/_accordion2.scss */
+#accordion .ui-accordion-content {
+  max-height: 45vh !important;
+}
+
+/*ALINEAR ICONOS DERECHA*/
+/* line 14, ../sass/somos-bureau/_accordion2.scss */
+.ui-accordion .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+
+/* line 17, ../sass/somos-bureau/_accordion2.scss */
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  left: unset;
+  top: 50%;
+  right: .5em;
+}
+
+/* line 23, ../sass/somos-bureau/_accordion2.scss */
+.width-fix {
+  width: 50px;
+  display: block;
+  float: left;
+}
+
+/*ICONOS PERSONALIZADOS*/
+/* line 30, ../sass/somos-bureau/_accordion2.scss */
+.ui-icon {
+  margin-top: -0.5em !important;
+}
+
+/* line 34, ../sass/somos-bureau/_accordion2.scss */
+.ui-icon.iconOpen {
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+/* line 39, ../sass/somos-bureau/_accordion2.scss */
+.ui-icon.iconClosed {
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+/* line 44, ../sass/somos-bureau/_accordion2.scss */
+.ui-icon, .ui-widget-content .ui-icon {
+  background-image: url("../closed.png") !important;
+}
+
+/* line 47, ../sass/somos-bureau/_accordion2.scss */
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+  background-image: url("../opened.png") !important;
+}
+
+/*FORMATO ACORDEON*/
+/* line 53, ../sass/somos-bureau/_accordion2.scss */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-radius: 0 !important;
+}
+
+/* line 59, ../sass/somos-bureau/_accordion2.scss */
+.ui-accordion .ui-accordion-content {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* line 64, ../sass/somos-bureau/_accordion2.scss */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #000000 !important;
+  background: #ffffff !important;
+  font-weight: normal;
+  color: #000000 !important;
+}
+
+/* line 70, ../sass/somos-bureau/_accordion2.scss */
+.ui-accordion .ui-accordion-header {
+  margin: 0px 0 0 0 !important;
+}
+
+/* line 1, ../sass/somos-bureau/_espacios.scss */
+.espacios-container {
+  width: 100%;
+}
+
+/* line 4, ../sass/somos-bureau/_espacios.scss */
+.espacios-unit {
+  height: 25vh;
+}
+
+/* line 7, ../sass/somos-bureau/_espacios.scss */
+.espacio {
+  height: 5vh !important;
+}
+
+/* line 11, ../sass/somos-bureau/_espacios.scss */
+#espacios-image-container img {
+  width: 100%;
+}
+
+/*
+.hidden{
+	display: none;
+}
+.active{
+	display: block;
+}
+*/
+/* line 22, ../sass/somos-bureau/_espacios.scss */
+.image-container img {
+  height: 100% !important;
+}
+
+
+/*********************** cruzestudio.es ****************************/
+div.contenedor-cruz-estudio{
+  /*background: darkgreen;*/
+}
+
+div.eventos-destacados{
+  display: flex;
+}
+
+div.evento-destacado{
+  width: 50%;
+  position: relative;
+}
+
+div.evento-destacado .info-destacados{
+  position: absolute;
+  top: 36%;
+  left: 0;
+  transform: translate(10%, -50%);
+  color: white;
+  padding-right: 2em;
+
+}
+
+div.evento-destacado .info-destacados h2{
+  font-size: 1em;
+  margin-bottom: -0.3em;
+}
+
+div.evento-destacado a{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: white;
+}
+
+#contenedor-general-eventos{
+  /*margin: 5em;
+  padding: 2em;
+  border: 5px solid black;*/
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+
+}
+#calendario{
+  /*border: 1px solid black;*/
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  font-size: 16px;/*Este parámetro será cambiado con javascript en el evento window resize para ajustar child elements*/
+}
+.titulo-mes-ano{
+  width: 100%;
+}
+.dia{
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 14%;
+  /*height: 2.7em;*/
+  text-align: right;
+
+  /*font-size: 1em;*/
+}
+.circulo{
+  border: 1px solid black;
+  height: 100%;
+  border-radius: 14em/9em;
+  transform: scale(1.01);/***************/
+}
+.circulo:hover{
+  background-color: black;
+  color: white;
+}
+.circulo p{
+  margin-top: .5em;
+  margin-right: .2em;
+}
+
+#fila-mes-ano{
+  width: 98%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#fila-mes-ano .flecha-calendario{
+  width: 2em;
+  padding-top: 0.1em;
+}
+
+#fila-mes-ano p{
+  display: inline;
+  font-size: 1em;
+  font-size: 1.3em;
+}
+
+#fila-mes-ano #ano-mostrado{
+  margin-left: 1em;
+}
+
+/*#fila-mes-ano > div{
+  display: inline;
+  float: right;
+}*/
+#flecha-mes-anterior img{
+  transform: rotate(180deg);
+}
+
+#fila-eventos-anteriores{
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: -1px;/*para solapar borders con los dias*/
+}
+#fila-eventos-anteriores p{
+  display: inline;
+  margin-left: 1em;
+}
+#fila-eventos-anteriores div{
+  display: inline;
+}
+
+#panel-info-evento-derecho{
+  width: 30%;
+  padding-right: .2em;
+}
+
+#panel-info-evento-derecho h2{
+  font-size: .4em;
+  margin: 0;
+}
+
+#panel-info-evento-derecho p{
+  font-size: .3em;
+  margin: .2em;
+}
+
+#panel-info-evento-derecho p.etiqueta{
+  font-size: .25em;
+}
+
+#panel-info-evento-derecho #panel-enlace-compra-entradas{
+  font-size: 1em;
+}
+
+#panel-info-evento-derecho #panel-enlace-compra-entradas p{
+  font-size: .3em;
+  margin: .2em;
+}
+
+.eventos-destacados .enlace-mas-info{
+  font-size: 1em;
+}
+
+.eventos-destacados .enlace-mas-info p{
+  font-size: 1em;
+  margin: .2em;
+  text-align: right;
+  margin-top: 0.7em;
+}
+
+.eventos-destacados .enlace-mas-info p img{
+  height: 1em;
+  width: auto;
+}
+
+#panel-info-evento-derecho .enlace-mas-info{
+  font-size: 1em;
+}
+
+#panel-info-evento-derecho .enlace-mas-info p{
+  font-size: .3em;
+  margin: .2em;
+  text-align: right;
+  margin-top: 0.7em;
+}
+
+#panel-info-evento-derecho .enlace-mas-info p img{
+  height: 1em;
+  width: auto;
+}
+
+#panel-info-evento-derecho .espacio-vacio{
+  height: .1em;
+}
+
+
+#panel-contenedor-titulo-categoria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+#panel-contenedor-titulo-categoria div.panel-titulo-evento{
+  width: 85%;
+}
+
+#panel-contenedor-titulo-categoria div#panel-color-categoria{
+  width: 15%;
+
+}
+
+#panel-contenedor-titulo-categoria div#panel-color-categoria div{
+  background-color: red;
+  width: .4em;
+  height: .4em;
+  border-radius: 50%;
+  margin-top: .1em;
+}
+
+/*  SINGLE-EVENTOS  */
+#contenedor-detalle-evento{
+    display: flex;
+    height: 100%;
+}
+#contenedor-detalle-evento div#col-izq{
+    width: 66.666%;
+    border-right: 1px solid black;
+    padding: 2em;
+}
+#contenedor-detalle-evento div#col-drch{
+    width: 33.333%;
+
+}
+#contenedor-detalle-evento div#titulo-categoria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#contenedor-detalle-evento div#titulo h2{
+    font-size: 4rem;
+    margin: 0;
+}
+#contenedor-detalle-evento div#categoria{
+    border-radius: 50%;
+    /*background-color: red;*/
+    width: 1em;
+    height: 1em;
+}
+#contenedor-detalle-evento div#col-izq img{
+    width: 100%;
+    margin-top: 1em;
+}
+#contenedor-detalle-evento div#col-drch img{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+
+
+#contenedor-detalle-evento div#col-drch > p{
+    border-bottom: 1px solid black;
+  padding-left: 0.5em;
+}
+
+#contenedor-detalle-evento div#col-drch > a > p{
+    margin-top: 3em;
+    text-align: right;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+/*  FIN SINGLE-EVENTOS  */
+
+/* PAGE EVENTOS ANTERIORES */
+body.page-template-page-eventosanteriores-php .contenedor-cruz-estudio{
+  /*align-items: flex-start;*/
+  /*flex-direction: column;*/
+}
+.contenedor-cruz-estudio section{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 100%;
+  padding-left: 1em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-cruz-estudio section h2{
+  width: 33.3333%;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.contenedor-cruz-estudio h3.ui-accordion-icons:last-of-type{
+  border-bottom: 2px solid black !important;
+}
+
+.contenedor-cruz-estudio h3 > div{
+  padding: 0.3em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-cruz-estudio h3 > div > div{
+  width: 33.3333%;
+}
+
+.contenedor-cruz-estudio h3 > div p{
+  margin: 0;
+}
+
+.contenedor-cruz-estudio h3 .categoria-titulo{
+  display: flex;
+}
+
+.contenedor-cruz-estudio h3 .color-categoria{
+  width: 1em;
+  height: 1em;
+
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.contenedor-cruz-estudio h3.no-padding{
+  padding: 0;
+  padding-left: 1em;
+}
+
+.contenedor-cruz-estudio div.ui-accordion-content{
+  align-items: center;
+  padding-left: 1em;
+}
+
+.contenedor-cruz-estudio div.ui-accordion-content .col-xs-2{
+  padding-left: 0;
+}
+
+
+
+.ampliar-div{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255,255,255,1);
+  z-index: 9999;
+
+}
+.ampliar-img{
+  width: 70vw;
+}
+
+
+
+
+/*  FIN PAGE EVENTOS ANTERIORES  */
