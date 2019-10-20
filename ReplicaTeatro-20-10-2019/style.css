@@ -2577,8 +2577,11 @@ div.evento-destacado a{
     justify-content: space-between;
     align-items: center;
 }
+#contenedor-detalle-evento div#titulo{
+  max-width: 92%;
+}
 #contenedor-detalle-evento div#titulo h2{
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
 }
 #contenedor-detalle-evento div#categoria{
@@ -2608,6 +2611,54 @@ div.evento-destacado a{
     text-align: right;
     margin-right: 1em;
     font-size: 1.5em;
+}
+
+div#contenedor-compartir{
+  text-align: right;
+}
+
+p#compartir{
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+div#popup-share-btns{
+  display: none;
+  padding: 1em 0.6em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 3px 2px 4px 1px #d2d2d2;
+}
+
+#contenedor-detalle-evento div#col-izq div#popup-share-btns a img{
+  width: 2em;
+  margin: 0 .5em;
+}
+div#popup-share-btns > a{
+  /*margin: 0 .5em;*/
+}
+div#popup-share-btns a{
+  opacity: 0.8;
+}
+div#popup-share-btns a:link {
+  text-decoration: none;
+}
+
+div#popup-share-btns a:visited {
+  text-decoration: none;
+}
+
+div#popup-share-btns a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+div#popup-share-btns a:active {
+  text-decoration: underline;
+}
+div#popup-share-btns img{
+  height: 2em;
 }
 
 /*  FIN SINGLE-EVENTOS  */

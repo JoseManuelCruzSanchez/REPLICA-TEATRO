@@ -277,6 +277,16 @@ else if(window.location.pathname.indexOf('/eventos-anteriores/') !== -1){
         document.getElementById('content').classList.remove("body-container");
     }
 }
+else if(window.location.pathname.indexOf('/eventos/') !== -1){
+    function aparece(esto) {
+        jQuery('#' + esto.id).fadeToggle()
+            .css( {
+                "background-color": "white",
+                "display": "inline-block"
+            } );
+
+    }
+}
 
 
 
